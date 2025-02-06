@@ -12,6 +12,7 @@
 	  border: 3px solid black;
 	  border-radius: 25px;
 	  margin: 0 auto;
+	  align-content: center;
 }
 
 
@@ -22,6 +23,7 @@
 	border: 2px solid black;
 	  font-size: 30px;
 }
+
 
 h1, h2{
 	text-align: center;
@@ -47,6 +49,7 @@ img{
 	display: grid;
 	gap: 5px;
 	grid-template-columns: 500px;
+	align-items: center;
 
 	/* Play with: */
 	/* justify-content:; */
@@ -70,14 +73,8 @@ img{
 
 	/* Make this a two column grid. */
 	.grid{
-
-
-		
-		/* Play with: */
-		/* justify-content:; */
-		/* align-items:;  */
-
-
+		grid-template-columns: 1fr 1fr;
+		grid-column: 1/span 2;
 		
  	}
 
@@ -101,7 +98,7 @@ img{
 
 	/* Make this a three column grid using fr. */
 	.grid{
-
+		grid-template-columns: 1fr 1fr 1fr;
 		/* Why don't we bother with justify here? */
 	}
 	.item3{
